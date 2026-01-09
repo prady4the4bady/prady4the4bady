@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>prady4the4bady — 3D Profile Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Premium 3D Profile Demo</h1>
+      <p class="lede">Interactive 3D hero using <code>model-viewer</code>. Try rotating, zooming, and toggling render modes.</p>
+      <div class="buttons">
+        <a class="btn" href="https://github.com/prady4the4bady/prady4the4bady">View on GitHub</a>
+        <a class="btn ghost" href="https://prady4the4bady.github.io/prady4the4bady/" target="_blank">Open demo</a>
+      </div>
+    </header>
+
+    <section class="viewer-wrap">
+      <model-viewer id="mv" src="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Box/glTF-Binary/Box.glb" alt="Rotating box" auto-rotate camera-controls ar poster="" exposure="1">
+        <button slot="ar-button" class="ar">View in your space</button>
+      </model-viewer>
+
+      <aside class="info">
+        <h3>Controls</h3>
+        <ul>
+          <li>Rotate: click + drag</li>
+          <li>Zoom: scroll or pinch</li>
+          <li>Auto-rotate: enabled</li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer class="foot">Made with ⚡ and a love for polished design.</footer>
+  </main>
+</body>
+</html>
